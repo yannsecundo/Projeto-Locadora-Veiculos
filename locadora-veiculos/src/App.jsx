@@ -1,11 +1,13 @@
 import './App.css';
-import Header from './components/Header'
+import Login from './Paginas/Login/Login';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-        <h1> Projetinho felas </h1>
+    <div>
+      <h1 className='titulo'>LOCADORA TOPZERA</h1>
+      <form className="App">
+        <Login />
+      </form>
     </div>
   );
 }

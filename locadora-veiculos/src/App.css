@@ -1,38 +1,59 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-style: solid;
+  margin: 15% 40% 10% 40%;
+}
+.button-login {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 5% 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#submit-login {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+  left: 30px;
+}
+
+#submit-login:hover{
+background-color: #4CAF50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.titulo{
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#label-email{
+  margin-left: 5%;
+}
+
+#label-senha {
+  margin-left: 5%;
+}
+
+#title-login {
+  text-align: center;
+}
+
+.input{
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 85%;
+}
+
+.select-login{
+  position: relative;
+  margin-right: 0px;
+  font-family: Arial;
+  background-color: dodgerblue;
 }
