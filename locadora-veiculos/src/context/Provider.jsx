@@ -9,14 +9,16 @@ function Provider({ children }) {
         senha: "",
     });
     const [logado, setLogado] = useState({});
-
+    const [valor, setValor] = useState('');
 
     const contextValue = useMemo(() => ({
         login,
         setLogin,
         logado,
-        setLogado
-    }), [login, logado]);
+        setLogado,
+        valor,
+        setValor,
+    }), [login, logado, valor]);
 
 
     return (

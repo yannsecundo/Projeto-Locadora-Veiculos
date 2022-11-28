@@ -6,6 +6,9 @@
     color: green;
     height: 100px;
     margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #titulo-header{
@@ -16,6 +19,12 @@
 #cliente-name-header{
     text-align: right;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#funcionario-name-header{
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 .button-logout {
@@ -35,10 +44,14 @@
     color: black;
     border: 1px solid green;
     border-radius: 12px;
-    height: 38px;
 }
 
 #button-logout:hover {
     background-color: white;
     color: black;
+}
+
+.logado{
+    display: flex;
+    flex-direction: column;
 }

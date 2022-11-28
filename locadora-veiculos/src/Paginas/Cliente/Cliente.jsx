@@ -1,22 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/Header/Header";
-
-
+import { getCarro } from '../../Serviços/serviçoCarro';
+import CardCarro from '../../components/CardCarro/CardCarro';
+import './ClienteCSS.css';
+    
 function Cliente() {
+
+    const [dataCarro, setDataCarro] = useState([]);
+
+    const carrosGet = async () => {
+   try {
+       const { data } = await getCarro();
+       setDataCarro(data);
+   } catch (error) {
+     alert(error.response.data);
+   }
+  }
+
+  useEffect(() => {
+        carrosGet()
+  },[])
+
     return (
         <div>
             <Header />
-            <h2>Página principal ou do cliente no caso</h2>
-            <table>
-                <tr>
-                    <th> carro 1 </th>
-                    <th> caror 2 </th>
-                </tr>
-                <tr>
-                    <td> gol </td> 
-                    <td> uno </td>
-                </tr>
-            </table>
+            <div className='cardBlock'>
+                {dataCarro.map((dataCarro) => <CardCarro dataCarro={dataCarro} />)}
+            </div>
         </div>
     );
 

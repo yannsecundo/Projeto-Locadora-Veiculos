@@ -2,11 +2,14 @@ import React, { useContext, useState } from "react";
 import { useHistory } from 'react-router-dom';
 import Context from "../../context/Context";
 import { loginCliente } from "../../Serviços/serviçosCliente";
+import { loginFuncionario } from "../../Serviços/serviçoFuncionario";
 
 function Login() {
     const [selected, setSelected] = useState("1");
     const { login, setLogin } = useContext(Context);
     const { setLogado } = useContext(Context);
+
+
 
     const history = useHistory();
 
@@ -28,12 +31,22 @@ function Login() {
                 const { email, senha } = login; 
                 const {data} = await loginCliente({ email, senha });
                 setLogado(data);
+                setLogin('');
                 history.push('/cliente')   
             } catch (error) {
                 alert(error.response.data)
             }
         } if (selected === '2') { 
-            history.push('/funcionario')
+            try {
+                const { email, senha } = login;
+                const { data } = await loginFuncionario({ email, senha });
+                setLogado(data);   
+                setLogin('');
+                history.push('/funcionario')
+            } catch (error) {
+                alert(error.response.data)
+            }
+            
         }
     }
 

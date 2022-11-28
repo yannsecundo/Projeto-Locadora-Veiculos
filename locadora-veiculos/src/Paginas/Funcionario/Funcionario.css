@@ -8,6 +8,70 @@ table {
     padding: 5px;
 }
 
-.button-aprovar{
-    flex: 0 1 150px;
+.aprovar-button{
+    background-color: green;
+        /* Blue */
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        text-decoration: none;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+}
+
+#button-aprovar{
+    background-color: greenyellow;
+        color: black;
+        border: 1px solid green;
+        border-radius: 12px;
+        height: 40px;
+}
+
+#button-aprovar:hover{
+    
+    background-color: white;
+    color: black;
+}
+
+
+.tabela-funcionario{
+display: flex;
+}
+
+.recusar-button {
+    background-color: green;
+    /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#button-recusar {
+    background-color:red;
+    color: black;
+    border: 1px solid red;
+    border-radius: 12px;
+    height: 40px;
+}
+
+#button-recusar:hover {
+
+    background-color: white;
+    color: black;
+}
+
+
+.tabela-funcionario {
+    display: flex;
+}
+
+.buttons-funcionario{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }

@@ -16,7 +16,7 @@ function App() {
         <Route exact path="/registrofuncionarios" component={RegistroFuncionario} />
         <Route exact path="/cliente" component={Cliente} />
         <Route exact path="/funcionario" component={Funcionario} />
-        <Route exact path="/registrocarros" component={RegistroCarro}/>
+        <Route exact path="/registrocarro" component={RegistroCarro}/>
       </Provider>
     </Switch>
   );
