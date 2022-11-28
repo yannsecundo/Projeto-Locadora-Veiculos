@@ -1,0 +1,67 @@
+.App {
+    align-items: center;
+    border-style: inset;
+    margin: 15% 40% 10% 40%;
+}
+
+.button-login {
+    background-color: dodgerblue;
+    /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 5% 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#submit-login {
+    background-color: white;
+    color: black;
+    border: 2px solid dodgerblue;
+    left: 30px;
+}
+
+#submit-login:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.titulo {
+    text-align: center;
+}
+
+#label-email {
+    margin-left: 5%;
+}
+
+#label-senha {
+    margin-left: 5%;
+}
+
+#title-login {
+    text-align: center;
+}
+
+.input {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 85%;
+}
+
+.select-login {
+    position: relative;
+    margin-right: 0px;
+    font-family: Arial;
+    background-color: dodgerblue;
+}
+
+#button-register {
+    background-color: white;
+    border-color: white;
+    margin-left: 5%;
+    color: dodgerblue;
+}

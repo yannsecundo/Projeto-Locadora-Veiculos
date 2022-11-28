@@ -1,11 +1,11 @@
 .App {
   align-items: center;
-  border-style: solid;
+  border-style: inset;
   margin: 15% 40% 10% 40%;
 }
 .button-login {
-  background-color: #4CAF50;
-  /* Green */
+  background-color:dodgerblue;
+  /* Blue */
   border: none;
   color: white;
   padding: 10px 30px;
@@ -20,12 +20,12 @@
 #submit-login {
   background-color: white;
   color: black;
-  border: 2px solid #4CAF50;
+  border: 2px solid dodgerblue;
   left: 30px;
 }
 
 #submit-login:hover{
-background-color: #4CAF50;
+background-color: dodgerblue;
   color: white;
 }
 
@@ -56,4 +56,11 @@ background-color: #4CAF50;
   margin-right: 0px;
   font-family: Arial;
   background-color: dodgerblue;
+}
+
+#button-register {
+  background-color: white;
+  border-color: white;
+  margin-left: 5%;
+  color: dodgerblue;
 }

@@ -4,12 +4,21 @@ import Context from "./Context";
 
 function Provider({ children }) {
 
-    const [data, setData] = useState([]);
-    
-    const contextValue = useMemo(() => ({
-        data,
+    const [login, setLogin] = useState({
+        email: "",
+        senha: "",
+    });
+    const [logado, setLogado] = useState({});
 
-    }), [data])
+
+    const contextValue = useMemo(() => ({
+        login,
+        setLogin,
+        logado,
+        setLogado
+    }), [login, logado]);
+
+
     return (
         <Context.Provider value= {contextValue}>
             {children}
