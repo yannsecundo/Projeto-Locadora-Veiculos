@@ -7,8 +7,15 @@ function Header() {
 
     return (
         <div className="header">
-            <h2>Header</h2>
-            <p>{ logado.cliente_nome }</p>
+            <h2 id="titulo-header">Katapimbas</h2>
+            <h3 id="cliente-name-header">{logado.cliente_nome}</h3>
+            <button
+                className="button-logout"
+                type="button"
+                id="button-logout"
+            >
+                Sair
+            </button>
 
         </div>
     );
