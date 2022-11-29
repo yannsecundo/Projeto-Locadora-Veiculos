@@ -1,7 +1,7 @@
 import React from 'react';
 import './AluguelComponentCSS.css';
 
-function AluguelComponent({dataCarro}) {
+function AluguelComponent({dataAluguel}) {
 
     return (
         <div className='cardAluguel'>

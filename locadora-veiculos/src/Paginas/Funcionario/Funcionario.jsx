@@ -5,6 +5,7 @@ import Header from "../../components/Header/Header";
 import AluguelComponent from "../../components/Aluguel/AluguelComponent";
 
 function Funcionario() {
+    // logado
     return (
         <div>
             <Header />

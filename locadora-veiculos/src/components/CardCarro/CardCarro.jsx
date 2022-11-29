@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Context from "../../context/Context";
 import './CardCSS.css';
 
 function CardCarro({dataCarro}) {
-
+    const { logado } = useContext(Context);
     return (
         <div className='cardCarro'>
             <p>{dataCarro.carro_nome}</p>
