@@ -21,7 +21,7 @@ function Login() {
         if (selected === '1') {
         history.push('/registroclientes')
         } if (selected === '2') {
-        history.push('/registrofuncionário')
+        history.push('/registrofuncionarios')
         }
     };
 

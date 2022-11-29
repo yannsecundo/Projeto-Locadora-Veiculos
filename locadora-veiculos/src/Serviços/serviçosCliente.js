@@ -8,3 +8,8 @@ export const loginCliente = async (body) => {
   const data = await api.post('/clientes/login-cliente', body);
   return data;
 }
+
+export const createCliente = async (body) => { 
+  const data = await api.post('/clientes/criar-cliente', body);
+  return data;
+}

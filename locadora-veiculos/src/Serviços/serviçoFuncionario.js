@@ -9,3 +9,8 @@ export const loginFuncionario = async (body) => {
   const data = await api.post('/funcionarios/login', body);
   return data;
 }
+
+export const createFunc = async (body) => { 
+  const data = await api.post('/funcionarios/create-funcionario/', body);
+  return data;
+}

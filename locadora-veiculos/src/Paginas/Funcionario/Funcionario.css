@@ -10,7 +10,6 @@ table {
 
 .tabela-alugueis{
     display: flex;
-    border: solid;
 }
 
 .aprovar-button{

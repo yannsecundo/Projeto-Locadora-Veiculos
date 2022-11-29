@@ -18,3 +18,8 @@ export const deletCarro = async (id) => {
   const data = await api.delete(`/carros/deletar-carro/${id}`);
   return data;
 }
+
+export const attCarro = async (id) => { 
+  await api.put(`/carros/atualizar-carro/${id}`);
+  
+}

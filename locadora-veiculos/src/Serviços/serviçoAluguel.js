@@ -5,7 +5,7 @@ const api = axios.create({
 });
 
 export const getAluguel = async () => {
-  const data = await api.get('/alugueis/');
+  const data = await api.get('/alugueis');
   return data;
 } 
 
@@ -15,6 +15,6 @@ export const createAluguel = async (body) => {
 }
 
 export const deletAluguel = async (id) => { 
-  const data = await api.delete(`/alugueis//delete-aluguel/${id}`);
+  const data = await api.delete(`/alugueis/delete-aluguel/${id}`);
   return data;
 }
