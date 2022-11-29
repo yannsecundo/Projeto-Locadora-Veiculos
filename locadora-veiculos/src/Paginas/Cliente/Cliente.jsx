@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Header from "../../components/Header/Header";
 import { getCarro } from '../../Serviços/serviçoCarro';
 import CardCarro from '../../components/CardCarro/CardCarro';
 import './ClienteCSS.css';
+import Header from "../../components/Header/Header";
     
 function Cliente() {
 

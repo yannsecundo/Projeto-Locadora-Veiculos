@@ -5,7 +5,6 @@ const api = axios.create({
 });
 
 export const loginCliente = async (body) => {
-  console.log(body);
   const data = await api.post('/clientes/login-cliente', body);
   return data;
 }

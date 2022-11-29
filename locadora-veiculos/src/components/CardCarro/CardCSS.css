@@ -24,7 +24,7 @@ height: 7rem;
 }
 
 .button-indisponivel{
-    background-color: green;
+    background-color: red;
         border: none;
         color: white;
         padding: 10px 30px;
@@ -32,4 +32,5 @@ height: 7rem;
         font-size: 16px;
         border-radius: 12px;
         width: 20%;
+        cursor: pointer;
 }

@@ -1,16 +1,13 @@
-th, td {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-table {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-.tabela-alugueis{
+.cardAluguel {
+    background-color: cyan;
+    align-items: center;
+    width: 49%;
     display: flex;
-    border: solid;
+    justify-content: space-around;
+    border-radius: 12px;
+    height: 7rem;
+    margin: 1rem 0;
+    text-decoration: none;
 }
 
 .aprovar-button{

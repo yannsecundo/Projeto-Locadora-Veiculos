@@ -8,3 +8,13 @@ export const getCarro = async () => {
   const data = await api.get('/carros/');
   return data;
 } 
+
+export const createCarro = async (body) => { 
+  const data = await api.post('/carros/cadastrar-carro', body);
+  return data;
+}
+
+export const deletCarro = async (id) => { 
+  const data = await api.delete(`/carros/deletar-carro/${id}`);
+  return data;
+}
