@@ -91,12 +91,6 @@ function RegistroCarro() {
                     >
                         Confirmar
                     </button> 
-                    <button
-                        type="button"
-                        id='cancelar-button'
-                    >
-                        Cancelar
-                    </button>
                 </div>
             </div>
             <div>

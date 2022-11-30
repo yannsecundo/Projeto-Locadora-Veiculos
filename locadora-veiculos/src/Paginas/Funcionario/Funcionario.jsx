@@ -24,8 +24,8 @@ function Funcionario() {
     return (
         <div>
             <Header />
-            <h2>Página do funcionário</h2>
-            <Link to="/registrocarro"> Registrar Veiculo </Link>
+            <h2 id="titulo">Pedidos</h2>
+            <Link id="link" to="/registrocarro"> Registrar Veiculo </Link>
             <div className="tabela-alugueis">
                 {dataAluguel.map((dataAluguel) => <AluguelComponent dataAluguel={dataAluguel} alugueis={alugueis} />)}
             </div >

@@ -61,7 +61,26 @@
 
 #button-register {
     background-color: white;
-    border-color: white;
-    margin-left: 5%;
-    color: dodgerblue;
+    color: black;
+    border: 2px solid dodgerblue;
+    left: 30px;
+}
+
+.register{
+    background-color: dodgerblue;
+    /* Blue */
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 5% 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#button-register:hover {
+    background-color: dodgerblue;
+    color: white;
 }

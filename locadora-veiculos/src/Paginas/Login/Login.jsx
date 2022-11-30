@@ -95,14 +95,15 @@ function Login() {
                         <option value={i.id}>{i.name}</option>
                     ))}
                 </select>
-            </form>
-            <button
-                type="button"
-                id="button-register"
-                onClick={() => { registerChange() }}
+                <button
+                    type="button"
+                    id="button-register"
+                    className="register"
+                    onClick={() => { registerChange() }}
             >
                 Register
             </button>
+            </form>
         </div>
     );
 
